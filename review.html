@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/review.css" />
+    <title>Cake | Review</title>
+</head>
+<body>
+    <div class="topNav">
+        <header>
+            <h1 class="navHeader">Cake Review |</h1><h2>&nbsp;Just here to eat the cake</h2>
+            <nav>
+                    <a href="index.html" class="active">Home</a>
+                    <div class="mainNav" >
+                        <a href="#">Main menu</a>
+                        <div class="sub">
+                            <a href="types.html">Types</a>
+                            <a href="review.html">Review</a>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                    <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+    </div>
+
+    <h1 class="bodyh1">Review</h1>
+    <div class="row text">         
+        <div id="reviewJson"> 
+            <fieldset id="jsonOutput">
+                <input type="button" id="ajax-json-btn" value="Load the cakes!"/>   
+                <p>If you would like to see all the cakes and a bref description. Click the Load button.</p>                        
+            </fieldset>
+            <div id="listSection"></div>
+        </div>          
+        
+
+        <div id="commentSectionReview">
+        <h2>Comment</h2>
+        <fieldset id="ReviewcommentBox">
+            <label >Name</label>
+            <input type="text" name="firstname" id="comment-first-name"/>
+            <label >Comment</label>
+            <textarea
+                name="comment"
+                id="comment-input"
+                cols="50"
+                rows="10"
+            ></textarea>
+            <br />
+        
+            <input id="comment-data" type="button" value="Post" />
+            </fieldset>
+            <p id="comment-output"></p>
+            <ul id="list-comment-output"></ul>
+        <div id="commentSection"></div>
+                           
+        </div>
+</div>
+    <script src="https://kit.fontawesome.com/d32396bb69.js"></script>
+    <script src="./assets/js/review.js"></script>
+</body>
+</html>
